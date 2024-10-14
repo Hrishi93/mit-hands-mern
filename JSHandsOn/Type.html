@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="#"/>
+    <style>
+
+    </style>
+</head>
+<body>
+    
+    <!--Internal JS or Script as Tag-->
+    <button onclick="hello()">Click</button>
+
+    <!--Inline JS-->
+    <button onclick='alert("Hello In Inline JS")'>Click Inline</button>
+
+    <!--External JS or Script as File-->
+    <button onclick="Msg()">Click External</button>
+
+    <script>
+        //Internal JS
+        function hello(){
+            window.alert("Hello in Internal JS")
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

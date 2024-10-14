@@ -1,0 +1,10 @@
+div{
+    width: 600px;
+    height: auto;
+    background-color: yellow;
+    text-align: center;
+}
+
+button:hover{
+    background-color: blue;
+}

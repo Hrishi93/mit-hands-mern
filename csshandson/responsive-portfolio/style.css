@@ -1,0 +1,63 @@
+body{
+    font-family: 'Times New Roman', Times, serif ;
+    margin: 0;
+    padding: auto;
+    line-height: 1.15;
+    background-color: blanchedalmond;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/*Css for Header */
+header{
+    background:grey;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1{
+    color: thistle;
+}
+
+nav ul li{
+    display: inline;
+    padding-right: 30px;
+}
+
+/*Css for About*/
+.about-section{
+    background-color: #f1e2e2;
+}
+
+.about-section h1{
+    text-align:center;
+}
+
+.about-section table tr td{
+    padding: 10px;
+}
+.about-section img{
+    border-radius: 25px;
+}
+
+.about-section p{
+    font-size: x-large;
+}
+
+.about-section p:hover{
+    background-color: hotpink;
+}
+
+
+/* Prject CSS */
+.project-section{
+    background-color:#f1e2e2 ;
+}
+
+#sub-project-section p {
+    font-size: larger;
+    color: red;
+}

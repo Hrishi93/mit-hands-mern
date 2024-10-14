@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .design{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <p onclick="alertMsg()">Click Here for Alert Msg</p>
+
+    <h1 onclick="consoleMsg()">Click here for output in Console</h1>
+
+    <!--Inner HTML In these example we will able to Manupalate Perticular Tag-->
+    <p id="msg" class="design" onclick="innerMsg()">Msg Will Reflect Here</p>
+
+    <!--Write method use if we want to change intire Body-->
+    <p onclick="intireChangeMsg()">Change the Stucture</p>
+    
+    <script>
+        function alertMsg(){
+           // alert("Hello World in Alert Box");
+           window.alert("HEllo in a alert BOX");
+        }
+
+
+        function consoleMsg(){
+            console.log("Hello in Console")
+            //log("Hello in Console")
+        }
+
+        function innerMsg(){
+            document.getElementById("msg").innerHTML="Hello in Perticular element";
+        }
+
+        function intireChangeMsg(){
+            document.write("Hello in Wtite Method");
+        }
+    </script>
+</body>
+</html>

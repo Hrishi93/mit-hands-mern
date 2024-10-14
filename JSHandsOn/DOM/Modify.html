@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h3>Demo DOM Modification</h3>
+
+    <p id="fname">Hrishikesh</p>
+    <p id="lname">Mahure</p>
+
+    <button onclick="display()">Store and Display</button>
+    <h5 id="demo">Modification will reflect Here</h5>
+    <script>
+        function display(){
+            const msg="Welcome";
+           const firstName=document.getElementById("fname");
+           const lastName=document.getElementById("lname");
+        //We are going to use perform modification on H5
+            document.getElementById("demo").innerHTML=msg+", "+firstName.innerHTML+" "+lastName.innerHTML;
+        }
+    </script>
+</body>
+</html>

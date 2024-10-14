@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <form>
+        <p>Student Name: <input type="text" Student Name: <input type="text" name="name" placeholder="Enter your name"></p>
+        <p>Age: <input type="number" name="'age" placeholder="Enter your age"></p>
+        <p>Password: <input type="password" name="pass"></p>
+       
+        <hr>
+        <section>
+            <p>Select your Gender</p>
+            <p></p><input type="radio" name="gender" value="male">male</p> <!-- const gender=male -->
+            <p><input type="radio" name="gender" value="female">female</p><!-- const gender=female -->
+            <p><input type="radio" name="gender" value="other">other</p><!-- const gender=other -->
+        </section>
+        
+        <hr>
+
+        <section>
+            <p>Select Your fevs Books</p>
+            <p><input type="checkbox" name="books" value="Math">Math</p>
+            <p><input type="checkbox" name="books" value="Sciense">Sciense</p>
+            <p><input type="checkbox" name="books" value="Python">Python</p>
+            <p><input type="checkbox" name="books" value="Java">Java</p>
+            <!--books=[Math, Sciense, Python]-->
+        </section>
+        <hr>
+        <p>Upload Photo:<input type="file"></p>
+        <hr>
+        <p>Write down the feedback: <textarea name="feedback" cols="40" rows="5"></textarea></p>
+        <!--<button>Submit</button>-->
+        <p><input type="submit"></p>
+        <p><input type="reset"></p>
+        
+    </form>
+</body>
+</html>
+<!--Input   type atrribute 
+        type=text,  -- text input
+        type=number, -- number input
+        type=password -- data in hide format
+    -->

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parentDiv">
+        <p>Hello We are in Box</p>
+    </div>
+
+    <button onclick="addElement()">Add Para</button>
+    <script>
+        function addElement() {
+            const newParagraph = document.createElement('p');
+            newParagraph.innerHTML = "This is a newly added paragraph.";
+            parentDiv.appendChild(newParagraph);  // Adds the new paragraph as the last child
+        }
+    </script>
+    
+</body>
+</html>

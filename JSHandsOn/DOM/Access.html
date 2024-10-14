@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Document</title>
+    <style>
+        /*ID Selector */
+        #name{
+                color: red;
+              font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <p id="name">Example of DOM</p><!-- 0-->
+    <p id="fname">Hrishikesh</p>
+    <p class="lname">Mahure</p>
+    <p class="cities">Nagpur</p>
+    <p class="cities">Pune</p>
+    <p class="cities">Nashik</p>
+
+    <!--Call the Function-->
+    <button onclick="accessElement()">Call The Fuction</button>
+    <button onclick="accessData()">Data</button>
+    <script>
+
+        function accessData(){
+                const data=document.getElementsByTagName('p');
+
+                for(let i=0;i<data.length;i++){
+                    console.log(data[i].innerHTML);
+                }
+                    
+        }
+     
+        function accessElement(){
+            const firstName=document.getElementById("fname");  // we are able to access the element using id attribute
+                                                                 //getElementById stire data in for of object       
+            //window.alert(firstName.innerHTML);
+           console.log(firstName.innerHTML)
+
+           const lastName=document.getElementsByClassName("cities"); // in the form of the array
+           console.log(lastName[0].innerHTML);
+           console.log(lastName[1].innerHTML);
+           console.log(lastName[2].innerHTML);
+        }
+    </script>
+</body>
+</html>
